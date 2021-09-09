@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    
+	<link href="../Css/rsataurant.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="shortout icon" href="../Media/UN.png" type="image/x-icon">
+    <title>Restaurant.ma</title>
+</head>
+	
+<body>
+	<header>
+        <nav class="navbar navbar-expand-lg fixed-top py-2" id="home" style="background-color: #fff;">
+			
+            <div class="container"><a href="../index.html"><img src="../Media/Un.png" alt="logo image" style="height: 45px; width: 170px;"></a>
+				
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+					
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a href="../index.html" class="nav-link font-weight-bold" style="color: orange">Accueil<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a href="../index.html#menu_food" class="nav-link font-weight-bold">Nos Menu</a></li>
+                        <li class="nav-item"><a href="#footer" class="nav-link font-weight-bold">Contactez-Nous</a></li>
+                    </ul>
+                </div>	
+				<a href="../Html/cartShoping.html" class="nav-link navbar-link-2 waves-effect" style="margin-left: 10px; padding-top: 5px">
+         			 <span class="badge badge-pill red" style="color: WHITE; background-color: red; padding: 7px 4px 4px 4px">0</span>
+           		     <i class="fa fa-shopping-cart fa-lg"  style="color: orange;"></i>
+   		       </a>
+            </div>
+        </nav>
+    </header>
+       
+
+       
+       <div class="products-container" style="margin-top: 120px; padding-bottom: 30px">
+        <div style="text-align: center; color: orange; margin-bottom: 30px;">
+            <H2 >Votre panier</H2>
+            <hr/>
+        </div>
+          <div class="table-responsive">
+             <table class="table" style=" margin: 0">
+                 <thead style="display:block; overflow:auto; width: 600px; background-color: white;">
+                     <tr>
+                        <th scope="col" style="width: 300px; text-align: left">Produit</th>
+                        <th scope="col" ></th>
+                        <th scope="col" ></th>
+                        <th scope="col" ></th>
+                        <th scope="col" ></th>
+                        <th scope="col" ></th>
+                        <th scope="col" ></th>
+                        <th scope="col" style="width: 150px; text-align: center">Prix</th>
+                        <th scope="col" ></th>
+                        <th scope="col" style="width: 250px; text-align: center">Quantité</th>
+                        <th scope="col" ></th>
+                        <th scope="col" style="width: 250px; text-align: center">Total</th>
+                        <th scope="col" style="width: 250px; text-align: center"></th>
+                      </tr>
+                 </thead>
+              </table>
+              <div class="products" id="products">
+               
+             </div>
+           </div>
+       </div>
+       
+       <hr id="hr_" style="visibility: hidden;"/>
+       <section style="margin: 0; display: flex; justify-content: center; padding: 20px 0px 40px 0;" class="caisse_btn">
+		  	<div style="margin: 0px 10px 0 0px; float: right; visibility: hidden;" class="retour_btn" id="retour_btn">
+	     				<a href="../index.html#menu_food" role="button"   style="list-style: none; color: forestgreen; border-radius: 6px; background-color: lightgrey; padding: 15px 15px 15px 15px;"> <i class="fa fa-shopping-cart" id="about" style="cursor: pointer; padding-right: 10px"></i> Retour à Menu </a>
+       		</div>
+       		<div style="float: right;" class="caisse_btn;  justify-content: center">
+	     				<a href="../Html/checkout.html" role="button" id="caisse_btn" style="list-style: none; color: white; border-radius: 6px; background-color: forestgreen; padding: 15px 15px 15px 15px; visibility: hidden;"> passe à la caisse <i class="fa fa-arrow-right" id="about" style="cursor: pointer; padding-left: 10px"></i></a>
+       	    </div>
+       </section>
+
+       <!-- ******************* -->
+       
+            <!-- Button to_top -->
+            <a class="gotopbtn" href="#">
+                <i class="fa fa-arrow-up"></i>
+            </a>
+            <!-- Footer -->
+        	<section id="footer">
+	        	<div class="container">
+	        		<div class="row text-center text-xs-center text-sm-left text-md-center">
+				<div class="col-xs-12 col-md-4 col-md-4">
+					<h5>Contactez nous</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a><i class="fa fa-angle-double-right"></i><i class="fa fa-phone"></i>0701232223</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i><i class="fa fa-whatsapp" style="color: #4FCE5D"></i>0701232223</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i><i class="fa fa-facebook" style="color: #4267B2"></i>Restaurant.ma</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i><i class="fa fa-instagram" style="color: #bc2a8d"></i>Restaurant.ma</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 col-md-4">
+					<h5>Adresse</h5>
+					<ul class="list-unstyled quick-links">
+					    <p style="color: grey"><i class="fa fa-angle-double-right" style="padding-right: 5px"></i>605, RATAN ICON</p>
+						<p style="padding-left: 15px; color: grey">BUILDING</p>
+						<p style="padding-left: 15px; color: grey">SEAWOODS SECTOR</p>
+						
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 col-md-4">
+                   <h5>Les heures</h5>
+                    <div  style="color: grey">
+                        <h6><i class="fa fa-angle-double-right" style="padding-right: 5px"></i>Lundi à vendredi: <span style="color: red">7:30 - 20:30</span></h6>
+                        <h6><i class="fa fa-angle-double-right" style="padding-right: 5px"></i>Samedi & Dimanche: <span style="color: red">8:00 - 21:30</span></h6>
+					</div>
+				</div>
+			</div>
+              
+            <!--Google map-->
+            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Avenue+Mohamed+Sijilmassi,+Casablanca+20250" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <!--Google Maps-->
+            
+	       <div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="#" target="_blank" style="color: #4267B2"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank" style="color: #DD2A7B"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank" style="color: #4FCE5D"><i class="fa fa-whatsapp"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank" style="color: grey"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+	        		<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p class="h6" style="color: grey">© Tous droits Inversé par.<a class="text-green ml-2" href="" target="_blank">Restaurant.ma</a></p>
+				</div>
+				<hr>
+			</div>	
+		        </div>
+	        </section>
+	<!-- ./Footer -->
+        
+    <!-- *********** -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="../Js/restaurant.js" type="text/javascript"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        // This Code Virefy if panier vide will not git access to the checkOut page
+        window.onload = function() {
+        var ca = localStorage.getItem('Commande_Client');
+
+        if(ca == ''){
+            document.getElementById('hr_').style.visibility = 'hidden';
+	        document.getElementById('retour_btn').style.visibility = 'hidden';
+	        document.getElementById('caisse_btn').style.visibility = 'hidden';
+        }
+        else{
+	        document.getElementById('hr_').style.visibility = 'visible';
+	        document.getElementById('retour_btn').style.visibility = 'visible';
+	        document.getElementById('caisse_btn').style.visibility = 'visible';
+        }
+    }
+    </script>
+<!-- This is for scroll button -->
+<script>
+    var toTop = document.querySelector(".gotopbtn");
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 80) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+    })
+
+</script>
+
+<script>
+    var total = 0;
+    
+    var removeCartItemButtons = document.getElementsByClassName('fa-trash');
+    console.log(removeCartItemButtons);
+    
+    for(var i = 0 ; i < removeCartItemButtons.length ; i++)
+    {
+        var button = removeCartItemButtons[i]
+        button.addEventListener('click', function(event)
+        {
+            total = 0;
+            var buttonClicked = event.target;
+            buttonClicked.parentElement.parentElement.remove();
+            ////////////////  This Code : Get Product Deleted From LocalStorage  ////////////////
+            var z = buttonClicked.parentElement.parentElement.children[0].innerHTML.replace('<img style=" Width: 100px; padding: 10px" src="', '').replace('.jpg">','');
+            var a = buttonClicked.parentElement.parentElement.children[2].innerHTML.replace(' DH', '');
+            var x = buttonClicked.parentElement.parentElement.children[3].innerHTML.replace('<i class="fa fa-arrow-circle-left"></i>', '').replace('<i class="fa fa-arrow-circle-right"></i>', '');
+            total = total + (a * x);
+            //z = JSON.stringify(z);
+            //console.log(z);
+            
+            ///////  This Code : Delete The Product From 'ProductsInCart' From LocalStorage  /////////////
+            var cartItems = localStorage.getItem('productsInCart');
+            
+            window.localStorage.favs = cartItems;  //store object to local storage
+            //console.log("before : ", window.localStorage.favs);
+            var favs = JSON.parse(window.localStorage.favs || {});  //read and convert to object
+            var delKey = z;  //key to remove
+            
+            if (favs[delKey]) {  //check if key exists
+                
+                delete favs[delKey];  //remove the key from object
+            }
+            
+            window.localStorage.favs = JSON.stringify(favs);  //save it back
+            //console.log("after : ", window.localStorage.favs);  //display object with item removed
+            localStorage.setItem("productsInCart", window.localStorage.favs);
+                            ///////////////////////
+            
+            let cartCost = localStorage.getItem('totalCost');
+    
+            if(cartCost != null){
+                //////////
+                let productNumbers = localStorage.getItem('cartNumbers');
+                localStorage.setItem('cartNumbers', productNumbers - x);
+                
+                /////////
+                cartCost = parseInt(cartCost);
+                localStorage.setItem("totalCost", cartCost - total);
+                cartCost - total;
+                
+                document.getElementsByClassName('badge')[0].innerText = (productNumbers - x);
+                document.getElementsByClassName('basketTotal')[0].innerText = (cartCost - total) + '.00 DH';
+                
+                ////////
+                //console.log(cartItems);
+                localStorage.removeItem('tag');
+                }
+                location.reload();
+        });
+        
+    }
+    ///////////////   this function show in cosole the values in cart shopping   //////////////////////
+    function A1()
+    {
+        var aa = '';
+        var cartrows = document.getElementsByClassName('tr_')
+            for(var i=0; i<cartrows.length; i++)
+            {
+                var cartRow = cartrows[i]
+                var nameProduct = cartRow.getElementsByClassName('cart-name')[0]
+                var quantityProduct = cartRow.getElementsByClassName('cart-quantity')[0]
+                var priceProduct = cartRow.getElementsByClassName('cart-price')[0]
+                
+                var name = nameProduct.innerHTML
+                var quantity = quantityProduct.innerHTML.replace('<i class="fa fa-arrow-circle-left"></i>', '').replace('<i class="fa fa-arrow-circle-right"></i>', '')
+                var price = priceProduct.innerHTML.replace(' DH', '')
+                
+                aa += '|'+name+' -- '+price+'DH -- x'+quantity+'|';
+            }
+
+            console.log(aa);
+            localStorage.setItem("Commande_Client", aa);
+    }
+    A1();
+    /////////////////////////////////////////////////////////////////////////////////////////////////
+    
+</script>
+
+<script>
+    $(function() {
+        $(window).on('scroll', function() {
+
+            $('.navbar').addClass('active');
+    
+        });
+    });
+</script>
+</body>
+</html>

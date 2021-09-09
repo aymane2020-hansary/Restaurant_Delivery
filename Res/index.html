@@ -1,0 +1,867 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <link rel="shortout icon" href="./Media/UN.png" type="image/x-icon">
+    <link href="./Css/rsataurant.css" rel="stylesheet">
+    <title>Restaurant.ma</title>
+</head>
+	
+<body id="home">
+	<header>
+        <nav class="navbar navbar-expand-lg fixed-top py-2">
+			
+            <div class="container"><a href=""><img src="./Media/Un.png" alt="logo image" style="height: 45px; width: 170px; color: white"></a>
+				
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+					
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a href="#home" class="nav-link font-weight-bold" style="color: #ffae19">Accueil<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a href="#menu_food" class="nav-link font-weight-bold">Nos Menu</a></li>
+                        <li class="nav-item"><a href="#footer" class="nav-link font-weight-bold">Contactez-Nous</a></li>
+                    </ul>
+                </div>	
+				<a href="./Html/cartShoping.html" class="nav-link navbar-link-2 waves-effect" style="margin-left: 10px; padding-top: 5px">
+         			 <span class="badge badge-pill red" style="color: WHITE; background-color: #ff1919; padding: 4px 5px 5px 4px">0</span>
+           		     <i class="fa fa-shopping-cart fa-lg"  style="color: #ffae19;"></i>
+   		       </a>
+            </div>
+        </nav>
+    </header>
+  <!--  <video id="videoBG" poster="poster.JPG" autoplay muted loop>
+    <source src="Media/Food_Film%20.mp4" type="video/mp4">
+</video>
+	 Hero Section -->
+      <!-- <video autoplay muted loop id="myVideo">
+  <source src="Media/Food_Film.mp4" type="video/mp4">
+</video> -->
+ 
+    <section class="hero-section">
+
+        <div class="hero-grid">
+            <div class="hero-content">
+                <h1 class="display-4 font-weight-bold" style="padding-top: 10px; color: white; font-size: 50px;">Bienvenue à <span style="color: #ffae19;">Restaurant du goût</span></h1>
+                <p class="font-bold mb-0" style="color: #cccccc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, </br>there live the blind texts.</p>
+				<div style="margin: 25px;" class="commande_btn">
+					<a href="#menu_food" role="button" style="color: white; background-color: #ffae19; padding: 15px 25px 15px 25px; border-radius: 5px;">
+                    Commander<i class="fa fa-arrow-right" id="about" style="cursor: pointer; padding-left: 10px;"></i></a>
+            	</div>
+			</div>
+        </div>
+    </section>
+
+	<div id="menu_food"></div>
+	
+    <div class="container"  style="margin-bottom: 110px;">
+                <div class="center-title" style="text-align: center;">
+                    <h2 style="color: #ffae19; margin-top: 70px; font-weight: 600">Menu des plats</h2>
+                    <p class="text-white-gray">L'équipe des meilleurs chefs sert mieux nos précieux clients</p>
+                </div>
+                <div class="food-menu-card">
+                    <div>
+                        <!-- Nav tabs -->
+                        <ul class="nav tabs-menu-nav justify-content-center mb30" style="padding-bottom: 20px;" role="tablist">
+                            <li class="nav-item" role="presentation"><a class="nav-link active show" href="#petit_déjeuner" aria-controls="petit_déjeuner" role="tab" data-toggle="tab" aria-selected="true">Petit déjeuner</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#Dejeuner" aria-controls="Dejeuner" role="tab" data-toggle="tab" aria-selected="false"> Déjeuner</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#Dîner" aria-controls="Dîner" role="tab" data-toggle="tab" aria-selected="false">Dîner</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#Boissons" aria-controls="Boissons" role="tab" data-toggle="tab" aria-selected="false">Boissons</a></li>
+                        </ul>
+                        
+                        <!-- Tab panes -->
+                        
+                        <div class="tab-content">
+							<div role="tabpanel" class="tab-pane fade active show" id="petit_déjeuner">
+                                <div class="row">
+                                    <div class="col-md-6 mb20">
+                                        <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100 AA">
+                                                <img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/english-breakfast-dish_1203-9633.jpg" alt="Menu title">
+												<!-- <i class="fa fa-plus content_1" style="color: #fff; Font-size: 25px;"></i> -->
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 1</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font100">20 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100 A1">
+                                                <img class="img-fluid mr-4" width="80" src="https://img.freepik.com/free-photo/top-view-avocado-toast-with-radish-seeds-tray_23-2148749085.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 2</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">30 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/delicious-healthy-asian-food-white-background_24972-1026.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 3</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">35 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://img.freepik.com/free-photo/flat-lay-pita-with-avocado-spread-fried-egg-cutting-board_23-2148749147.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 4</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">15 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                    </div>
+                                      <div class="col-md-6 mb20">
+                                        <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/top-view-oatmeal-bowl-with-raspberries-blueberries_23-2148891798.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 5</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">40 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/delicious-healthy-snack-with-various-fruit_23-2148825013.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 6</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">63 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/top-view-composition-breakfast-goodies_23-2148826891.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 7</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">55 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="Dejeuner">
+                                   <div class="row">
+                                    <div class="col-md-6 mb20">
+                                        <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100 AA">
+                                                <img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/maki-sushi-isolated-white_2829-5653.jpg" alt="Menu title">
+												<!-- <i class="fa fa-plus content_1" style="color: #fff; Font-size: 25px;"></i> -->
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 8</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font100">20 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100 A1">
+                                                <abbr title="ADD"><img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/grilled-chicken-fillet-fresh-vegetable-salad-tomatoes-red-onion-arugula-chicken-meat-salad-healthy-food_2829-6942.jpg" alt="Menu title"></abbr>
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 9</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">30 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/vegan-farfalle-pasta-with-spinach-sauce-with-fried-chickpeas_2829-18272.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 10</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">35 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/indian-bread_74658-91.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 11</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">15 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                    </div>
+                                      <div class="col-md-6 mb20">
+                                        <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://img.freepik.com/free-photo/fresh-raw-food-with-fork-plate_23-2147870988.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 12</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">40 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/close-up-burgers-with-fries-plate_23-2148262913.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 13</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">63 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://img.freepik.com/free-photo/side-view-pizza-with-chopped-pepper-board-cookware_176474-3183.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 14</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">55 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                    </div>
+                                </div>
+                            </div>   
+						    <div role="tabpanel" class="tab-pane fade" id="Dîner">
+                                   <div class="row">
+                                    <div class="col-md-6 mb20">
+                                        <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100 AA">
+                                                <img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/grilled-chicken_144627-17511.jpg" alt="Menu title">
+												<!-- <i class="fa fa-plus content_1" style="color: #fff; Font-size: 25px;"></i> -->
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 15</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font100">20 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100 A1">
+                                                <abbr title="ADD"><img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/maki-sushi-isolated-white_2829-5653.jpg" alt="Menu title"></abbr>
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 16</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">30 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://img.freepik.com/free-photo/salmon-sashimi_74190-2864.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 17</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">35 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://img.freepik.com/free-photo/flat-lay-slice-pepperoni-pizza-plate_23-2148765310.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 18</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">15 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                    </div>
+                                      <div class="col-md-6 mb20">
+                                        <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/top-view-plate-with-grilled-chicken-skewers_23-2148632619.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 19</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">40 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://img.freepik.com/free-photo/seafood-spaghetti-close-up_23-2148393725.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 20</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">63 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/homemade-marinara-pasta-sauce-white-bowl_53876-96865.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 21</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">55 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                    </div>
+                                </div>
+                            </div>   
+						    <div role="tabpanel" class="tab-pane fade" id="Boissons">
+							    <div class="row" style="justify-content: center">
+                                    <div class="col-md-7 mb20">
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/delicious-banana-milkshake_144627-5649.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 22</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">12 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://img.freepik.com/free-photo/glass-cocktail-drink-with-lemon-slice-against-pink-background_23-2148102098.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 23</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">10 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/top-view-hot-latte-coffee-white-cup-isolated-white-background_1253-977.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 24</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font100">20 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                           <article class="media">
+                                            <!-- Article Image -->
+                                            <a class="g-width-100">
+                                                <img class="img-fluid mr-4" width="80" src="https://image.freepik.com/free-photo/milkshake-table_144627-27527.jpg" alt="Menu title">
+                                            </a>
+                                            <!--Image -->
+                                            <!--Content -->
+                                            <div class="media-body align-self-center g-pl-10">
+                                                <div class="d-flex justify-content-between mb10">
+                                                    <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Produit 25</h3>
+
+                                                    <div class="align-self-center">
+                                                        <strong class="text-white font700">30 DH</strong>
+                                                    </div>
+                                                </div>
+
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                            <!--/Content -->
+                                        </article><!--/Article -->
+                                    </div>
+                             </div>
+                            </div>
+						</div>
+                    </div>
+                </div>
+				<div style=" margin: 35px 0px 0px 10px; float: right;" class="caisse_btn">
+	     				<a href="./Html/cartShoping.html" role="button" style="list-style: none; color: white; border-radius: 6px; background-color: #329932; padding: 15px 20px 15px 15px">
+            		     Mon panier <i class="fa fa-arrow-right" id="about" style="cursor: pointer;"></i></a>
+       			</div>
+            </div>
+            
+            <!-- Alerts -->     
+            <div class="alert alert-success" id="alert" role="alert">
+                Le produit <span id="productName" style="color: #ffae19"></span> ajouté au panier (<span id="productPrice"></span>DH | Quantité 1)
+            </div>
+            
+            <hr style="width:35%; margin-left:30% !important; margin-right:35% !important;">
+            
+            <div class="col-md text-center">
+                <h2 class="mb-3" style="color: #ffae19; font-size: 32px; font-weight: 600; margin-top: 30px;">Comment ça marche</h2>
+            </div>
+
+            <section id="services" class="page-section colord" style="margin-top: -10px; margin-bottom: -10px;">
+                <div class="container">
+                  <div class="row"> 
+                    <!-- item -->
+                    <div class="col-md-4 text-center"><i class="circle"> <img src="media/works-3.svg" alt=""/></i>
+                      <h3 style="font-size: 26px; margin-bottom: 20px;">Choisissez votre produits</h3>
+                      <p style="color: grey; font-size: 13px;">Renseigner les infos et l'adresse où vous souhaitez être livré</p>
+                    </div>
+                    <!-- end: --> 
+                    
+                    <!-- item -->
+                    <div class="col-md-4 text-center"><i class="circle"> <img src="media/works-1.svg" alt="" /></i>
+                      <h3 style="font-size: 26px; margin-bottom: 20px;">Sélectionnez votre infos</h3>
+                      <p style="color: grey; font-size: 13px;">Choisissez ce que vous voulez dans le menu</p>
+                    </div>
+                    <!-- end: --> 
+                    
+                    <!-- item -->
+                    <div class="col-md-4 text-center"> <i class="circle"><img src="media/works-2.svg" alt="" /></i>
+                      <h3 style="font-size: 26px; margin-bottom: 20px;">Recevez-le à votre porte</h3>
+                      <p style="color: grey; font-size: 13px;">Votre commande vous sera livrée en un rien de temps</p>
+                    </div>
+                    <!-- end: --> 
+                    
+                  </div>
+                </div>
+                <!--/.container--> 
+              </section>
+                        
+            <!-- Button to_top -->
+            <a class="gotopbtn" href="#">
+                <i class="fa fa-arrow-up"></i>
+            </a>
+            
+            <hr style="width:35%; margin-left:30% !important; margin-right:35% !important;">
+
+            <div class="col-md text-center" style="margin-top: 40px;">
+                <h2 class="mb-3" style="color: #ffae19; font-size: 32px; font-weight: 600">Plats les plus achetés</h2>
+                <h3 class="subtitle" style="color: grey;font-size: 16px;">Nos plats préparés par amour, pour vous.</h3>
+          </div>
+        <div class="container my-4">
+            <!--Carousel Wrapper-->
+            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel" style="margin-top: 50px; margin-bottom: 70px">
+          
+              <!--Indicators-->
+              <ol class="carousel-indicators" style="margin-bottom: -30px; margin-top: 30px">
+                <li data-target="#multi-item-example" data-slide-to="0" class="active" style="background-color: #ffae19; padding: 2px 0;"></li>
+                <li data-target="#multi-item-example" data-slide-to="1" style="background-color: #ffae19; padding: 2px 0; opacity: 0.6"></li>
+              </ol>
+              <!--/.Indicators-->
+              <!--Slides-->
+              <div class="carousel-inner" role="listbox">
+                <!--First slide-->
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card mb-4 card_plat_prfr">
+                        <img class="card-img-top" height="300" src="https://image.freepik.com/free-photo/delicious-healthy-asian-food-white-background_24972-1026.jpg"
+                             alt="Card image cap">
+                        <div class="card-body text-center">
+                          <h4 class="card-title">Produit 3</h4>
+                          <p class="card-text">35 DH</p>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                      <div class="card mb-2 card_plat_prfr">
+                        <img class="card-img-top" height="300" src="https://image.freepik.com/free-photo/top-view-composition-breakfast-goodies_23-2148826891.jpg"
+                             alt="Card image cap">
+                        <div class="card-body text-center">
+                          <h4 class="card-title">Produit 7</h4>
+                          <p class="card-text">55 DH</p>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                      <div class="card mb-2 card_plat_prfr">
+                        <img class="card-img-top" height="300" src="https://img.freepik.com/free-photo/flat-lay-pita-with-avocado-spread-fried-egg-cutting-board_23-2148749147.jpg"
+                             alt="Card image cap">
+                        <div class="card-body text-center">
+                          <h4 class="card-title">Produit 4</h4>
+                          <p class="card-text">15 DH</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                </div>
+                <!--/.First slide-->
+                <div class="carousel-item">
+                 <!--Second slide-->
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card mb-2 card_plat_prfr">
+                        <img class="card-img-top" height="300" src="https://image.freepik.com/free-photo/close-up-burgers-with-fries-plate_23-2148262913.jpg"
+                             alt="Card image cap">
+                        <div class="card-body text-center">
+                          <h4 class="card-title">Produit 13</h4>
+                          <p class="card-text">63 DH</p>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                      <div class="card mb-2 card_plat_prfr">
+                        <img class="card-img-top" height="300" src="https://img.freepik.com/free-photo/side-view-pizza-with-chopped-pepper-board-cookware_176474-3183.jpg"
+                             alt="Card image cap">
+                        <div class="card-body text-center">
+                          <h4 class="card-title">Produit 14</h4>
+                          <p class="card-text">55 DH</p>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="col-md-4 clearfix d-none d-md-block">
+                      <div class="card mb-2 card_plat_prfr">
+                        <img class="card-img-top" height="300" src="https://img.freepik.com/free-photo/seafood-spaghetti-close-up_23-2148393725.jpg"
+                             alt="Card image cap">
+                        <div class="card-body text-center">
+                          <h4 class="card-title">Produit 20</h4>
+                          <p class="card-text">63 DH</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                </div>
+                <!--/.Second slide-->
+              </div>
+              <!--/.Slides-->
+            </div>
+            <!--/.Carousel Wrapper-->
+          </div>
+
+            <!-- Footer -->
+        	<section id="footer" style="margin-top: 150px;">
+            </br></br>
+	        	<div class="container">
+	        		<div class="row text-center text-xs-center text-sm-left text-md-center">
+				<div class="col-xs-12 col-md-4 col-md-4">
+					<h5>Contactez nous</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a><i class="fa fa-angle-double-right"></i><i class="fa fa-phone"></i>0701232223</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i><i class="fa fa-whatsapp" style="color: #4FCE5D"></i>0701232223</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i><i class="fa fa-facebook" style="color: #4267B2"></i>Restaurant.ma</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i><i class="fa fa-instagram" style="color: #bc2a8d"></i>Restaurant.ma</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 col-md-4">
+					<h5>Adresse</h5>
+					<ul class="list-unstyled quick-links">
+					    <p style="color: grey"><i class="fa fa-angle-double-right" style="padding-right: 5px"></i>605, RATAN ICON</p>
+						<p style="padding-left: 15px; color: grey">BUILDING</p>
+						<p style="padding-left: 15px; color: grey">SEAWOODS SECTOR</p>
+						
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 col-md-4">
+                   <h5>Les heures</h5>
+                    <div  style="color: grey">
+                        <h6><i class="fa fa-angle-double-right" style="padding-right: 5px"></i>Lundi à vendredi: <span style="color: red">7:30 - 20:30</span></h6>
+                        <h6><i class="fa fa-angle-double-right" style="padding-right: 5px"></i>Samedi & Dimanche: <span style="color: red">8:00 - 21:30</span></h6>
+					</div>
+				</div>
+			</div>
+            
+            <!--Google map-->
+            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+             <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Avenue+Mohamed+Sijilmassi,+Casablanca+20250" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <!--Google Maps-->
+            
+	        		<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="#" target="_blank" style="color: #4267B2"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank" style="color: #DD2A7B"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank" style="color: #4FCE5D"><i class="fa fa-whatsapp"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank" style="color: grey"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+	        		<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p class="h6" style="color: grey">© Tous droits Inversé par.<a class="text-green ml-2" href="" target="_blank">Restaurant.ma</a></p>
+				</div>
+				<hr>
+			</div>	
+		        </div>
+	        </section>
+	<!-- ./Footer -->
+            
+    <!-- *********** -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="./Js/restaurant.js" type="text/javascript"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- This is for scroll button -->
+    <script>
+        var toTop = document.querySelector(".gotopbtn");
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 350) {
+                toTop.classList.add("active");
+            } else {
+                toTop.classList.remove("active");
+            }
+        })
+    
+    </script>
+    
+    <script>
+        $(function() {
+            $(window).on('scroll', function() {
+                if ($(window).scrollTop() > 15) {
+                    $('.navbar').addClass('active');
+                } else {
+                    $('.navbar').removeClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
